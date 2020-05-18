@@ -1,0 +1,44 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.number {
+    font-size: 3rem;
+    color: black;
+}
+
+.infected {
+    border-bottom: 10px solid black;
+    color: black;
+}
+
+.recovered {
+    border-bottom: 10px solid green;
+    color: green;
+}
+
+.deaths {
+    border-bottom: 10px solid red;
+    color: red;
+}
+
+/* media query */
+
+@media (max-width: 640px) {
+    .cardContainer {
+        flex-direction: column;
+    }
+}
